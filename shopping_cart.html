@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Savory</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="store.js" async></script>
+
+</head>
+
+<body onload="updateCart(), displayCartNumber();">
+    <div id="banner">
+        <img src="Head.png" alt="Page-Front Image" class="logo">
+        <a href="shopping_cart.html"><img src="Cart.png" class="icon" alt="Shopping Cart icon"></a>
+        <div id="cart-number"></div>
+        <!-- navigation bar -->
+        <a href="Home.html">Home  ᐯ</a>
+        <a href="list.html">Featured  ᐯ</a>
+        <a href="#">
+                support  ᐯ
+                </a>
+        <a href="#">
+                account  ᐯ
+                </a>
+    </div>
+
+
+    <div class="shoppingbag">
+        <button class="button2" onclick="document.location='list.html'">Back to Product</button>
+        <h3>Shopping Cart</h3>
+        <!--subcontainer contains entire shopping bag component-->
+        <div class="item2">
+            <div class="container">
+
+                <div id="empty-cart-frame">
+
+                </div>
+
+                <div id="cart-items">
+
+                </div>
+                <div id="total-price">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- trending products section -->
+    <main class="main2">
+        <div>
+            <h3>Recommended <span style="color: #C4B1A6">For You</span> :</h3>
+        </div>
+        <div class="recipe">
+            <a href="detail.html"><img src="Couch.png" alt="Couch Pillow"></a>
+            <h2>Couch Pillow</h2>
+            <p class="mins">$ 16</p>
+
+        </div>
+        <div class="recipe">
+            <img src="Cushion.png" alt="White&Orange Cushion" />
+            <h2>White&Orange Cushion</h2>
+            <p class="mins">$ 16</p>
+
+        </div>
+        <div class="recipe">
+            <img src="Throw.png" alt="Throw Pillow" />
+            <h2>Throw Pillow</h2>
+            <p class="mins">$ 16</p>
+
+        </div>
+        <div class="recipe">
+            <img src="Bed.png" alt="Bed Pillow" />
+            <h2>Bed Pillow</h2>
+            <p class="mins">$ 16</p>
+
+        </div>
+
+    </main>
+
+    </div>
+</body>
+
+</html>

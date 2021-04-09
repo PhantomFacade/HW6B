@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Detail</title>
+    <link rel="stylesheet" type="text/css" href="style copy 2.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="store.js" async></script>
+</head>
+
+<body onload="displayCartNumber();">
+    <div id="banner">
+        <img src="Head.png" alt="Page-Front Image" class="logo">
+        <a href="shopping_cart.html"><img src="Cart.png" class="icon" alt="Shopping Cart icon"></a>
+        <div id="cart-number"></div>
+        <!-- navigation bar -->
+        <a href="Home.html">Home  ᐯ</a>
+        <a href="list.html">Featured  ᐯ</a>
+        <a href="#">
+                support  ᐯ
+                </a>
+        <a href="#">
+                account  ᐯ
+                </a>
+    </div>
+    <div class="container">
+
+        <section id="Overlay">
+            <form>
+                <h2>Couch Pillow</h2>
+                <p>100% recycled material</p>
+                <p class="price">$ 16</p>
+                <p class="quote"><i>"Quality Guaranteed.<br>
+                    We promise."</i></p>
+                <div class="item-color">
+                    <p><b>COLOR</b></p>
+                    <div class="custom-select" style="width:200px;">
+                        <select onclick="leaveChange();" name="couch" id="couch">
+                            <option value="greenCouch">Green</option> 
+                            <option value="greyCouch">Grey</option> 
+                            <option value="cyanCouch">Cyan</option> 
+                        </select>
+                    </div>
+                </div>
+                <div class="item-size">
+                    <p><b>SIZE</b></p>
+                    <div class="custom-select" style="width:200px;">
+                        <select onclick="changeSize();">
+                          <option value="size1">10’’ x 10’’</option>
+                          <option value="size2">15’’ x 15’’</option>
+                          <option value="size3">20’’ x 22’’</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="purchase">
+                    <button class='shop-item-button' type='button'><b>+ Add to cart</b></button>
+                </div>
+
+
+            </form>
+        </section>
+
+        <main>
+            <button class="button2" onclick="document.location='list.html'">Back to Featured</button>
+            <br>
+            <div class="recipe" id="recipe">
+                <img src="Couch.png" id="shop-item-image" alt="Couch Pillow" />
+                <h2>Couch Pillow</h2>
+                <p class="mins">$ 16</p>
+                <p class="description">
+                    Our couch pillow gives you the lively, homey experience that will make your couch more comfortable.</p>
+            </div>
+
+        </main>
+
+        <footer>
+            <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/savory.svg" class="logo">
+        </footer>
+
+    </div>
+</body>
+
+</html>

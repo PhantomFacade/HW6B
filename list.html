@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Savory</title>
+    <link rel="stylesheet" type="text/css" href="style copy.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="store.js" async></script>
+</head>
+
+<body onload="displayCartNumber();">
+    <div id="banner">
+        <img src="Head.png" alt="Page-Front Image" class="logo">
+        <img src="cart.png" href="shopping_cart.html" alt="Page-Front Image" class="icon">
+        <a href="shopping_cart.html"><img src="Cart.png" class="icon" alt="Shopping Cart icon"></a>
+        <div id="cart-number"></div>
+        <!-- navigation bar -->
+        <a href="Home.html">Home  ᐯ</a>
+        <a href="list.html">Featured  ᐯ</a>
+        <a href="#">
+                    support  ᐯ
+                    </a>
+        <a href="#">
+                    account  ᐯ
+                    </a>
+    </div>
+    <div class="container">
+        <section id="overlay">
+            <div>
+                <h3><span style="color: #C4B1A6">Search Result for: Couch Pillow</span></h3>
+            </div>
+            <form>
+                <h2>Filters:</h2>
+                <section class="price">
+                    <span>Order of Price</span>
+                    <br>
+                    <input type="radio" name="HtoL" id="yes" value="yes">
+                    <label for="yes">Low → High</label>
+                    <br>
+                    <input type="radio" name="LtoH" id="no" value="no">
+                    <label for="no">High → Low</label>
+                </section>
+                <br>
+                <section class="label">
+                    <input type="checkbox" name="Recommended" id="Recommended" value="Recommended">
+                    <label for="Recommended">Recommended</label>
+                    <br>
+                    <input type="checkbox" name="For Gift" id="For Gift" value="For Gift">
+                    <label for="For Gift">For Gift</label>
+                    <br>
+                    <input type="checkbox" name="Artistic" id="Artistic" value="Artistic">
+                    <label for="Artistic">Artistic</label>
+                    <br>
+                    <input type="checkbox" name="Light Color" id="Light Color" value="Light Color">
+                    <label for="Light Color">Light Color</label>
+                    <br>
+                    <input type="checkbox" name="Dark Color" id="Dark Color" value="Dark Color">
+                    <label for="Dark Color">Dark Color</label>
+                    <br>
+                    <input type="checkbox" name="Simple" id="Simple" value="Simple">
+                    <label for="Simple">Simple</label>
+                    <br>
+                </section>
+            </form>
+        </section>
+
+        <main>
+
+            <div class="recipe">
+                <a href="detail.html"><img src="Couch.png" alt="Couch Pillow"></a>
+                <h2>Couch Pillow</h2>
+                <p class="mins">$ 16</p>
+
+            </div>
+            <div class="recipe">
+                <img src="Cushion.png" alt="White&Orange Cushion" />
+                <h2>White&Orange Cushion</h2>
+                <p class="mins">$ 16</p>
+
+            </div>
+            <div class="recipe">
+                <img src="Throw.png" alt="Throw Pillow" />
+                <h2>Throw Pillow</h2>
+                <p class="mins">$ 16</p>
+
+            </div>
+            <div class="recipe">
+                <img src="Bed.png" alt="Bed Pillow" />
+                <h2>Bed Pillow</h2>
+                <p class="mins">$ 16</p>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/savory.svg" class="logo">
+        </footer>
+
+    </div>
+</body>
+
+</html>
