@@ -109,10 +109,10 @@ function updateCart() {
         var totalPrice = 0;
         for (var i = 0; i < cart.length; i++) {
             console.log("here");
-            // creating div element for each cart row 
+            // creating div element for each cart item
             var cartItem = document.createElement("div");
             cartItem.setAttribute("class", "cartInfo");
-            // set index for deletion
+            // set index for delete button
             cartItem.setAttribute("index", i);
 
             // add product image
@@ -185,10 +185,10 @@ function updateCart() {
 
 function removeCartItem(item) {
     getCart()
-        // item is the remove button
+        // remove button
     console.log("remove")
     console.log(item.parentElement)
-        // get index of the cart item /row
+        // get index of the cart item
     var index = item.parentElement.getAttribute("index");
 
     // remove item at index from cart
